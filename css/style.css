@@ -1,0 +1,105 @@
+/*-----------------Fonts-----------------*/
+
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('brandon_grotesque_bold-webfont.woff2') format('woff2'),
+         url('brandon_grotesque_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: url('brandon_grotesque_regular-webfont.woff2') format('woff2'),
+         url('brandon_grotesque_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*-----------------Background + Border-----------------*/
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+#top, #bottom, #left, #right{
+    background: #000;
+    position: fixed;
+}
+#left, #right {
+    top:0;
+    bottom:0;
+    width:50px;
+}
+#left {left:0;} #right {right:0;}
+
+#top, #bottom {
+    left: 0; 
+    right: 0;
+    height: 50px;
+}
+#top {top:0;} #bottom{bottom: 0;}
+
+
+/*-----------------Logo-----------------*/
+
+
+.logo {
+    display: block;
+    height: 375px;
+    margin: 0 auto;
+    margin-top: 105px;
+    width: 250px;
+}
+
+/*-----------------Email-----------------*/
+
+.email {
+    color: #000;
+    font-family: "brandon_grotesque_regularRg";
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*-----------------Instagram-----------------*/
+
+.instagram {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 160px;
+    height:100px;
+}
+.instagram img {
+    display: inline-block;
+    height: 20px;
+    margin: 0 auto;
+    padding-top: 3px;
+    vertical-align: middle;
+    width: 20px;
+}
+.text {
+    color: #000;
+    display: inline-block;
+    font-size: 20px;
+    font-family: "brandon_grotesque_regularRg";
+    letter-spacing: 2px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/*-----------------Store Information-----------------*/
+.information {
+    bottom: 0px;
+    color: #fff;
+    font-family: "brandon_grotesquebold";
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    position: fixed;
+    width: 100%;
+}
