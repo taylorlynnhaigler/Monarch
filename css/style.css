@@ -63,7 +63,7 @@
     vertical-align: middle;
     width: 20px;
 }
-.text {
+.instagram_handle {
     color: #000;
     display: inline-block;
     font-size: 20px;
@@ -76,7 +76,7 @@
     display: inline-block;
     text-decoration: none;
 }
-.text:hover {
+.instagram_handle:hover {
     color: #C0B283 ;
 }
 
@@ -125,7 +125,8 @@
     .rwd-break {
         display: block;
     }
-    .text {
+    .instagram_handle
+     {
         font-size: 16px;
     }    
     #top {
@@ -147,7 +148,7 @@
     .rwd-break {
         display: none;
     }
-    .text {
+    .instagram_handle {
         font-size: 20px;
     }
     #top, #bottom {
