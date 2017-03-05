@@ -139,20 +139,23 @@
         font-size: 20px;
     }
     .information {
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 0px;
     }
     #left, #right { 
-        width: 50px;
+        width: 30px;
     }
     .rwd-break {
-        display: none;
+        display: block;
     }
     .instagram_handle {
         font-size: 20px;
     }
-    #top, #bottom {
-        height: 50px;
+    #top {
+        height: 30px;
+    }
+    #bottom {
+        height: 80px;
     }
 }
 
@@ -160,5 +163,14 @@
     .information {
         font-size: 16px;
         margin-bottom: -5px;
-    }    
+    }   
+    #left, #right { 
+        width: 50px;
+    }
+    .rwd-break {
+        display: none;
+    } 
+    #top, #bottom {
+        height: 50px;
+    }
 }
