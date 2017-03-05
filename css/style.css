@@ -1,44 +1,25 @@
-/*-----------------Fonts-----------------*/
-
-@font-face {
-    font-family: 'brandon_grotesquebold';
-    src: url('brandon_grotesque_bold-webfont.woff2') format('woff2'),
-         url('brandon_grotesque_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'brandon_grotesque_regularRg';
-    src: url('brandon_grotesque_regular-webfont.woff2') format('woff2'),
-         url('brandon_grotesque_regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 /*-----------------Background + Border-----------------*/
 
 .background {
-    width: 100%;
-    height: 100%;
     background: #fff;
+    height: 100%;
+    width: 100%;
 }
 #top, #bottom, #left, #right{
     background: #000;
     position: fixed;
 }
 #left, #right {
-    top:0;
     bottom:0;
+    top:0;
     width:50px;
 }
 #left {left:0;} #right {right:0;}
 
 #top, #bottom {
+    height: 50px;
     left: 0; 
     right: 0;
-    height: 50px;
 }
 #top {top:0;} #bottom{bottom: 0;}
 
@@ -68,10 +49,11 @@
 /*-----------------Instagram-----------------*/
 
 .instagram {
+    height:100px;
     margin: 0 auto;
     margin-top: 25px;
     width: 160px;
-    height:100px;
+
 }
 .instagram img {
     display: inline-block;
@@ -90,6 +72,13 @@
     margin-left: 8px;
     vertical-align: middle;
 }
+.instagram a {
+    display: inline-block;
+    text-decoration: none;
+}
+.text:hover {
+    color: #C0B283 ;
+}
 
 /*-----------------Store Information-----------------*/
 .information {
@@ -98,8 +87,77 @@
     font-family: "brandon_grotesquebold";
     font-size: 16px;
     letter-spacing: 3px;
+    position: fixed;
     text-align: center;
     text-transform: uppercase;
-    position: fixed;
     width: 100%;
+}
+
+.rwd-break {
+    display: none;
+}
+
+/*-----------------Media Queries-----------------*/
+
+@media only screen and (min-width: 350px){
+    #bottom {
+        height: 80px;
+    }
+    #left, #right { 
+        width: 30px;
+    }
+    .logo {
+        height: 311px;
+        margin-top: 80px;
+        width: 211px;
+    }
+    .email {
+        margin-top: 70px;
+        font-size: 16px;
+    }
+    .instagram {
+        margin-top: 15px;
+    }
+    .information {
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .rwd-break {
+        display: block;
+    }
+    .text {
+        font-size: 16px;
+    }    
+    #top {
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .email {
+        font-size: 20px;
+    }
+    .information {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    #left, #right { 
+        width: 50px;
+    }
+    .rwd-break {
+        display: none;
+    }
+    .text {
+        font-size: 20px;
+    }
+    #top, #bottom {
+        height: 50px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .information {
+        font-size: 16px;
+        margin-bottom: -5px;
+    }    
 }
